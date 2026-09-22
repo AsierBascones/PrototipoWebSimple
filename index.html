@@ -2,17 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Gimnasio Norte - Título de la Página</title>
+    <meta name="description" content="Gimnasio Norte: Centro de entrenamiento, salud y bienestar. Musculación, actividades colectivas y entrenamiento personal.">
+    <title>Gimnasio Norte - Inicio</title>
+    <!-- Vinculación con la hoja de estilos externa -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado y navegación compartida -->
+    <!-- 1. CABECERA Y NAVEGACIÓN GLOBAL -->
     <header id="cabecera-principal">
         <div id="contenedor-logo">
             <img src="img/gym_logo.jpg" alt="Logotipo Gimnasio Norte" width="50">
             <span>Gimnasio Norte</span>
         </div>
+
+        <!-- Menú de navegación global entre archivos HTML -->
         <nav id="menu-sitio" aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -23,38 +27,82 @@
         </nav>
     </header>
 
-    <!-- Contenido que cambia en cada página -->
+    <!-- 2. CONTENIDO PRINCIPAL -->
     <main>
-        <h1>Título Principal de la Pantalla</h1>
+        <!-- Título principal de la pantalla -->
+        <h1>Tu Espacio de Entrenamiento y Salud</h1>
 
-        <!-- Índice interno de la propia página -->
-        <nav class="indice-pagina">
-            <p><strong>Apartados en esta página:</strong></p>
+        <!-- Índice interno navegable de la propia página -->
+        <nav class="indice-pagina" aria-label="Índice de la página">
+            <p><strong>En esta página:</strong></p>
             <ul>
-                <li><a href="#bloque1">Primer apartado</a></li>
-                <li><a href="#bloque2">Segundo apartado</a></li>
+                <li><a href="#presentacion">Sobre Gimnasio Norte</a></li>
+                <li><a href="#instalaciones">Nuestras Instalaciones</a></li>
+                <li><a href="#servicios">Servicios Disponibles</a></li>
+                <li><a href="#horarios">Horario y Ubicación</a></li>
             </ul>
         </nav>
 
-        <section id="bloque1">
-            <h2>Primer apartado</h2>
-            <p>Contenido explicativo...</p>
+        <!-- Sección 1: Presentación e imagen -->
+        <section id="presentacion">
+            <h2>Entrena a tu Ritmo en un Entorno Cercano</h2>
+            <p>
+                En <strong>Gimnasio Norte</strong> trabajamos para que el ejercicio físico forme parte de tu rutina diaria de manera saludable y sostenible. Contamos con programas adaptados tanto a personas que dan sus primeros pasos como a deportistas que buscan mejorar su rendimiento.
+            </p>
+            <figure>
+                <img src="img/centro.jpg" alt="Zona de entrenamiento libre con mancuernas y bancos del Gimnasio Norte">
+                <figcaption><em>Zona principal de entrenamiento funcional y peso libre.</em></figcaption>
+            </figure>
         </section>
 
-        <section id="bloque2">
-            <h2>Segundo apartado</h2>
-            <p>Más contenido...</p>
+        <!-- Sección 2: Instalaciones -->
+        <section id="instalaciones">
+            <h2>Instalaciones Equipadas para Todo Nivel</h2>
+            <p>
+                Disponemos de más de 800 metros cuadrados distribuidos en áreas específicas para cada tipo de disciplina:
+            </p>
+            <ul>
+                <li><strong>Sala de fuerza:</strong> Maquinaria guiada y zona de peso libre con barras olímpicas y mancuernas.</li>
+                <li><strong>Área de cardio:</strong> Cintas de correr, elípticas, bicicletas estáticas y remos de resistencia por aire.</li>
+                <li><strong>Zona funcional:</strong> Césped técnico, cajones pliométricos, cuerdas de batalla y bandas elásticas.</li>
+                <li><strong>Sala polivalente:</strong> Espacio reservado para sesiones colectivas de Yoga, Pilates y Spinning.</li>
+            </ul>
         </section>
 
-        <aside id="info-extra">
-            <h3>Información de interés</h3>
-            <p>Dato complementario o aviso rápido.</p>
+        <!-- Sección 3: Servicios y llamada a la acción -->
+        <section id="servicios">
+            <h2>¿Qué Ofrecemos?</h2>
+            <p>
+                Además del acceso libre a nuestras salas, todos los socios y socias cuentan con valoración física inicial y seguimiento periódico por parte de nuestros técnicos:
+            </p>
+            <ol>
+                <li>Entrenamiento libre monitorizado en sala con asesoramiento técnico continuo.</li>
+                <li>Cuadrante semanal de actividades dirigidas en grupos reducidos.</li>
+                <li>Planes personalizados de readaptación funcional y entrenamiento personal individualizado.</li>
+            </ol>
+            <p>
+                <a href="alta-socio.html" class="boton-accion">Inscríbete Ahora</a>
+            </p>
+        </section>
+
+        <!-- Bloque tangencial / complementario -->
+        <aside id="horarios">
+            <h3>Horario de Apertura</h3>
+            <p>
+                <strong>Lunes a Viernes:</strong> 06:30 - 22:30 h.<br>
+                <strong>Sábados:</strong> 08:30 - 20:00 h.<br>
+                <strong>Domingos y festivos:</strong> 09:00 - 14:00 h.
+            </p>
+            <p>
+                <strong>Dirección:</strong> Calle Mayor 12, Sestao (Bizkaia).
+            </p>
         </aside>
     </main>
 
-    <!-- Pie de página común -->
+    <!-- 3. PIE DE PÁGINA -->
     <footer id="pie-pagina">
         <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
+        <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
     </footer>
 
 </body>
