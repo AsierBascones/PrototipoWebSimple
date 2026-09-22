@@ -1,29 +1,80 @@
-/* --- 1. Selectores Generales (Etiquetas) --- */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f2f5;
-    color: #333333;
+/* ==========================================================================
+   1. SELECTOR UNIVERSAL Y RESETEO DE CAJA
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
 }
 
+/* ==========================================================================
+   2. SELECTORES GENERALES DE ETIQUETA (Estilos globales)
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f0f2f5;
+}
+
+/* Agrupación de selectores: aplica la misma regla a varios elementos */
 h1, h2, h3 {
     color: #1a365d;
     margin-top: 0;
+    margin-bottom: 0.8rem;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Enlaces base */
 a {
     color: #2b6cb0;
     text-decoration: none;
 }
 
-/* Pseudoclase :hover */
+/* Pseudoclase :hover (interacción del ratón) */
 a:hover {
+    color: #1a365d;
     text-decoration: underline;
 }
 
-/* --- 2. Layout y Selectores de Identificador (#id) --- */
+/* ==========================================================================
+   3. MAQUETACIÓN ESTRUCTURAL Y SELECTORES DE IDENTIFICADOR (#)
+   ========================================================================== */
+
+/* Cabecera general: distribuimos logo a la izquierda y menú a la derecha */
 #cabecera-principal {
     background-color: #1a365d;
     color: #ffffff;
@@ -33,118 +84,172 @@ a:hover {
     align-items: center;
 }
 
+/* Agrupación de logo y nombre */
 #contenedor-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
+/* Redondear ligeramente el icono del logo */
+#contenedor-logo img {
+    border-radius: 4px;
+}
+
+/* Menú de navegación: reseteo de lista para colocarlo en horizontal */
 #menu-sitio ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
+/* Estilos de los enlaces de la barra de navegación */
 #menu-sitio a {
     color: #ffffff;
     font-weight: bold;
+    font-size: 0.95rem;
 }
 
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    background: #ffffff;
-    padding: 2rem;
-    border: 1px solid #d2d6dc;
-}
-
-#pie-pagina {
-    background-color: #2d3748;
-    color: #ffffff;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
-
-/* --- 3. Selectores de Clase (.clase) --- */
-.indice-pagina {
-    background-color: #edf2f7;
-    border-left: 4px solid #2b6cb0;
-    padding: 0.8rem 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.boton-accion {
-    display: inline-block;
-    background-color: #e53e3e;
-    color: #ffffff;
-    padding: 0.6rem 1.2rem;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.boton-accion:hover {
-    background-color: #c53030;
+#menu-sitio a:hover {
+    color: #90cdf4;
     text-decoration: none;
 }
 
-/* --- 4. Tablas (actividades.html) --- */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+/* Contenedor central: despegado de los bordes y centrado en pantalla */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 8px;
 }
 
-th, td {
-    border: 1px solid #cbd5e0;
-    padding: 0.6rem;
-    text-align: left;
+/* Separación entre cada bloque de contenido */
+section {
+    margin-bottom: 2.5rem;
 }
 
-th {
-    background-color: #edf2f7;
+/* Pie de página centrado */
+#pie-pagina {
+    background-color: #1a365d;
+    color: #cbd5e0;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
 }
 
-/* --- 5. Formularios y Pseudoclases (alta.html) --- */
+#pie-pagina a {
+    color: #ffffff;
+}
+
+#pie-pagina a:hover {
+    color: #90cdf4;
+}
+
+/* ==========================================================================
+   4. FORMULARIOS: ESPACIADO Y SALTO DE LÍNEA
+   ========================================================================== */
+
+/* 1. Espacio entre los bloques grandes (las cajas de borde gris) */
 fieldset {
     border: 1px solid #cbd5e0;
-    padding: 1.2rem;
-    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 6px;
 }
 
 legend {
     font-weight: bold;
-    padding: 0 0.5rem;
     color: #1a365d;
+    padding: 0 0.5rem;
 }
 
+/* 2. Contenedor de cada campo (hace que el textarea/input baje a la línea siguiente) */
 .fila-formulario {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+    flex-direction: column; /* Coloca el label arriba y el input/textarea debajo */
+    margin-bottom: 1.2rem;  /* <-- AQUÍ controlas el espacio entre cada campo individual */
 }
 
+/* Espacio entre el texto del label y el campo de entrada */
+.fila-formulario label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;  /* <-- Espacio justo debajo de los dos puntos (:) */
+}
+
+/* Ancho y apariencia general de los campos de entrada y del textarea */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
-select {
-    padding: 0.5rem;
-    border: 1px solid #a0aec0;
+select,
+textarea {
+    width: 100%;           /* Ocupan todo el ancho disponible de la caja */
+    padding: 0.6rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-family: inherit;  /* Hereda la fuente Arial del body */
+    font-size: 0.95rem;
 }
 
-/* Pseudoclase :required */
-input:required, select:required {
-    border-left: 3px solid #e53e3e;
+/* Permite que el textarea solo se redimensione verticalmente */
+textarea {
+    resize: vertical;
 }
 
-/* Pseudoclase :disabled */
-input:disabled {
-    background-color: #edf2f7;
-    cursor: not-allowed;
+/* Separación para los botones de opción (radio buttons) */
+input[type="radio"] {
+    margin-right: 0.3rem;
+    margin-left: 0.8rem;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+/* ==========================================================================
+   5. TABLAS: CUADRANTE DE ACTIVIDADES
+   ========================================================================== */
+
+table {
+    width: 100%;                  /* Ocupa todo el ancho disponible del contenedor */
+    border-collapse: collapse;    /* Une los bordes dobles en una sola línea */
+    margin: 1.5rem 0;             /* Separación arriba y abajo de la tabla */
+    font-size: 0.9rem;
+}
+
+/* Bordes y espacio interno para todas las celdas */
+th, td {
+    border: 1px solid #cbd5e0;    /* Línea gris suave entre celdas */
+    padding: 0.75rem 0.5rem;      /* Relleno para que el texto no toque las líneas */
+    text-align: center;           /* Centra el texto de las clases */
+}
+
+/* Cabecera superior (días de la semana) */
+thead th {
+    background-color: #1a365d;    /* Azul corporativo */
+    color: #ffffff;               /* Texto blanco contrastado */
+    font-weight: bold;
+}
+
+/* Cabecera lateral (columna de horas: 07:30 - 08:20, etc.) */
+tbody th {
+    background-color: #edf2f7;    /* Fondo gris claro para destacar el tramo horario */
+    color: #1a365d;
+    font-weight: bold;
+    white-space: nowrap;          /* Evita que la hora se parta en dos líneas */
+}
+
+/* Pseudoclase :nth-child(even) para alternar color de filas (cebreado) */
+tbody tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* Pseudoclase :hover al pasar el ratón por encima de una fila */
+tbody tr:hover {
+    background-color: #e2e8f0;
 }

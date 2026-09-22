@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Formulario de inscripción y alta de socios en Gimnasio Norte.">
+    <title>Gimnasio Norte - Hazte Socio</title>
+    <!-- Hoja de estilos externa común -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. CABECERA Y NAVEGACIÓN GLOBAL (Layout común) -->
+    <header id="cabecera-principal">
+        <div id="contenedor-logo">
+            <img src="img/gym_logo.svg" alt="Logotipo Gimnasio Norte" width="50">
+            <span>Gimnasio Norte</span>
+        </div>
+
+        <nav id="menu-sitio" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="alta-socio.html">Hazte Socio</a></li>
+                <li><a href="tarifas-faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        <h1>Formulario de Alta de Socio/a</h1>
+        <p>Rellena los siguientes datos para tramitar tu inscripción en Gimnasio Norte.</p>
+
+        <!-- Índice interno navegable requerido -->
+        <nav class="indice-pagina" aria-label="Índice de la página">
+            <p><strong>En esta página:</strong></p>
+            <ul>
+                <li><a href="#sec-personales">1. Datos Personales</a></li>
+                <li><a href="#sec-cuota">2. Modalidad y Cuota</a></li>
+                <li><a href="#sec-confirmacion">3. Términos y Envío</a></li>
+            </ul>
+        </nav>
+
+        <!-- El formulario envuelve TODOS los campos y el botón de envío -->
+        <form action="#" method="post">
+
+            <!-- Bloque 1: Datos Personales -->
+            <section id="sec-personales">
+                <fieldset>
+                    <legend>Datos personales del socio/a</legend>
+
+                    <div class="fila-formulario">
+                        <label for="nombre">Nombre y Apellidos *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Gómez" required>
+                    </div>
+
+                    <div class="fila-formulario">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="fila-formulario">
+                        <label for="telefono">Teléfono de contacto *</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 612345678" required>
+                    </div>
+
+                    <div class="fila-formulario">
+                        <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                </fieldset>
+            </section>
+
+            <!-- Bloque 2: Selección de cuota y preferencias de gimnasio -->
+            <section id="sec-cuota">
+                <fieldset>
+                    <legend>Modalidad de suscripción</legend>
+
+                    <div class="fila-formulario">
+                        <label for="cuota">Tipo de cuota *</label>
+                        <select id="cuota" name="cuota" required>
+                            <option value="">-- Selecciona una cuota --</option>
+                            <option value="completa">Cuota Completa Ilimitada (35 €/mes)</option>
+                            <option value="mananas">Cuota Solo Mañanas (25 €/mes)</option>
+                            <option value="bono10">Bono 10 Sesiones (40 €)</option>
+                            <option value="anual">Abono Anual (350 €/año)</option>
+                        </select>
+                    </div>
+
+                    <p><strong>¿Has entrenado anteriormente con nosotros?</strong></p>
+                    <p>
+                        <input type="radio" name="experiencia" id="socio_si" value="si">
+                        <label for="socio_si">Sí, ya he sido socio/a antes</label>
+
+                        <input type="radio" name="experiencia" id="socio_no" value="no" checked>
+                        <label for="socio_no">No, es mi primera inscripción</label>
+                    </p>
+
+                    <div class="fila-formulario">
+                        <label for="fecha-inicio">Fecha deseada de inicio:</label>
+                        <input type="date" id="fecha-inicio" name="fecha_inicio">
+                    </div>
+
+                    <div class="fila-formulario">
+                        <label for="comentarios">Objetivos o lesiones previas (opcional):</label>
+                        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Indica si tienes alguna molestia física o tus objetivos principales..."></textarea>
+                    </div>
+                </fieldset>
+            </section>
+
+            <!-- Bloque 3: Condiciones y Envío -->
+            <section id="sec-confirmacion">
+                <fieldset>
+                    <legend>Confirmación legal</legend>
+                    <p>
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones">He leído y acepto el reglamento del centro y la política de privacidad. *</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Tramitar Alta" class="boton-accion">
+                </p>
+            </section>
+        </form>
+
+        <!-- Bloque tangencial con aside -->
+        <aside id="info-extra">
+            <h3>Atención presencial</h3>
+            <p>
+                Si prefieres realizar el alta de forma física o abonar la cuota en efectivo, puedes pasar por la recepción del centro en horario de apertura presentando tu documento de identidad.
+            </p>
+        </aside>
+    </main>
+
+    <!-- 3. PIE DE PÁGINA (Layout común) -->
+    <footer id="pie-pagina">
+        <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
+        <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Consulta las tarifas, abonos y preguntas frecuentes de Gimnasio Norte.">
+    <title>Gimnasio Norte - Tarifas y Preguntas Frecuentes</title>
+    <!-- Hoja de estilos externa común (comprueba si se llama style.css o styles.css en tu carpeta) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. CABECERA Y NAVEGACIÓN GLOBAL (Layout común) -->
+    <header id="cabecera-principal">
+        <div id="contenedor-logo">
+            <img src="img/gym_logo.svg" alt="Logotipo Gimnasio Norte" width="50">
+            <span>Gimnasio Norte</span>
+        </div>
+
+        <nav id="menu-sitio" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="alta-socio.html">Hazte Socio</a></li>
+                <li><a href="tarifas-faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        <h1>Tarifas y Preguntas Frecuentes</h1>
+        <p>Encuentra toda la información sobre nuestras cuotas mensuales, bonos y dudas habituales sobre el funcionamiento del centro.</p>
+
+        <!-- Índice interno navegable requerido -->
+        <nav class="indice-pagina" aria-label="Índice de la página">
+            <p><strong>En esta página:</strong></p>
+            <ul>
+                <li><a href="#tarifas">Nuestras Cuotas</a></li>
+                <li><a href="#faq-precios">1. ¿Cuánto cuesta inscribirse?</a></li>
+                <li><a href="#faq-ubicacion">2. ¿Dónde se encuentra el gimnasio?</a></li>
+                <li><a href="#faq-horario">3. ¿Cuál es el horario?</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección 1: Desglose de cuotas -->
+        <section id="tarifas">
+            <h2>Nuestras Cuotas</h2>
+            <p>Disponemos de planes flexibles sin permanencia obligatoria adaptados a tu disponibilidad:</p>
+
+            <ul>
+                <li><strong>Cuota Completa (35 €/mes):</strong> Acceso ilimitado a sala fitness, musculación y todas las clases dirigidas.</li>
+                <li><strong>Cuota Mañanas (25 €/mes):</strong> Acceso completo de lunes a viernes en horario de 06:30 a 14:00 h.</li>
+                <li><strong>Bono 10 Sesiones (40 €):</strong> 10 accesos libres sin caducidad mensual, ideal si viajas a menudo.</li>
+                <li><strong>Abono Anual (350 €/año):</strong> Pago único con dos meses de descuento incluidos.</li>
+            </ul>
+
+            <p>
+                <a href="alta-socio.html" class="boton-accion">Inscribirme con una Cuota</a>
+            </p>
+        </section>
+
+        <!-- Sección 2: Preguntas frecuentes estructuradas con <article> -->
+        <section id="preguntas-frecuentes">
+            <h2>Dudas Habituales</h2>
+
+            <article id="faq-precios">
+                <h3>1. ¿Cuánto cuesta inscribirse?</h3>
+                <p>
+                    La matrícula de alta inicial tiene un coste único de <strong>15 €</strong>, la cual incluye la pulsera de acceso a los tornos y una primera sesión de valoración física con un técnico de sala.
+                </p>
+            </article>
+
+            <article id="faq-ubicacion">
+                <h3>2. ¿Dónde se encuentra el gimnasio?</h3>
+                <p>
+                    Nuestras instalaciones están situadas en <strong>Calle Mayor 12, Sestao (Bizkaia)</strong>, a escasos 2 minutos a pie de la estación de tren y con paradas de autobús en la misma avenida.
+                </p>
+            </article>
+
+            <article id="faq-horario">
+                <h3>3. ¿Cuál es el horario de apertura?</h3>
+                <p>
+                    Abrimos los 365 días del año con los siguientes tramos:
+                </p>
+                <ul>
+                    <li>Lunes a Viernes: de 06:30 a 22:30 h ininterrumpido.</li>
+                    <li>Sábados: de 08:30 a 20:00 h.</li>
+                    <li>Domingos y festivos: de 09:00 a 14:00 h.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Bloque tangencial con aside -->
+        <aside id="info-extra">
+            <h3>¿Tienes alguna consulta adicional?</h3>
+            <p>
+                Si tienes dudas sobre cuotas especiales para colectivos o necesitas adaptar tu entrenamiento tras una lesión, puedes escribirnos a <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a> o consultar directamente en la recepción del club.
+            </p>
+        </aside>
+    </main>
+
+    <!-- 3. PIE DE PÁGINA (Layout común) -->
+    <footer id="pie-pagina">
+        <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
+        <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
+    </footer>
+
+</body>
+</html>

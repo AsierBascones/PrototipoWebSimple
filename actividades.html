@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Horarios y cuadrante semanal de actividades dirigidas en Gimnasio Norte.">
+    <title>Gimnasio Norte - Actividades y Horarios</title>
+    <!-- Hoja de estilos externa común -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. CABECERA Y NAVEGACIÓN GLOBAL (Layout común) -->
+    <header id="cabecera-principal">
+        <div id="contenedor-logo">
+            <img src="img/gym_logo.svg" alt="Logotipo Gimnasio Norte" width="50">
+            <span>Gimnasio Norte</span>
+        </div>
+
+        <nav id="menu-sitio" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="alta-socio.html">Hazte Socio</a></li>
+                <li><a href="tarifas-faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        <h1>Actividades y Horarios Semanales</h1>
+        <p>Consulta nuestro catálogo de clases colectivas y planifica tus sesiones de la semana.</p>
+
+        <!-- Índice interno navegable de la propia página -->
+        <nav class="indice-pagina" aria-label="Índice de la página">
+            <p><strong>En esta página:</strong></p>
+            <ul>
+                <li><a href="#catalogo">1. Catálogo de Actividades</a></li>
+                <li><a href="#cuadrante">2. Cuadrante Semanal de Clases</a></li>
+                <li><a href="#reserva-plazas">3. Reserva y Aforos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección 1: Descripción de disciplinas -->
+        <section id="catalogo">
+            <h2>Catálogo de Actividades</h2>
+            <p>Todas las clases están dirigidas por monitores especializados y adaptadas a distintos niveles de intensidad:</p>
+
+            <ul>
+                <li><strong>Spinning:</strong> Sesiones de ciclismo en sala para mejorar la resistencia cardiovascular y quemar calorías al ritmo de la música.</li>
+                <li><strong>Entrenamiento Funcional:</strong> Circuitos de fuerza y agilidad con peso libre, mancuernas y kettlebells.</li>
+                <li><strong>Yoga &amp; Pilates:</strong> Foco en la higiene postural, control respiratorio, flexibilidad y estabilidad central (core).</li>
+                <li><strong>GAP (Glúteos, Abdomen y Pierna):</strong> Trabajo muscular focalizado en el tren inferior y la zona media.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 2: Tabla semántica de horarios -->
+        <section id="cuadrante">
+            <h2>Cuadrante Semanal de Clases</h2>
+            <p>Las sesiones tienen una duración de 50 minutos con 10 minutos de descanso entre grupos:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Horario</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                        <th scope="col">Sábado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">07:30 - 08:20</th>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>GAP</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">09:30 - 10:20</th>
+                        <td>Yoga</td>
+                        <td>Pilates</td>
+                        <td>Yoga</td>
+                        <td>Pilates</td>
+                        <td>Spinning</td>
+                        <td>Funcional Total</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14:15 - 15:05</th>
+                        <td>GAP Express</td>
+                        <td>Funcional</td>
+                        <td>GAP Express</td>
+                        <td>Funcional</td>
+                        <td>Pilates</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18:00 - 18:50</th>
+                        <td>Spinning</td>
+                        <td>GAP</td>
+                        <td>Spinning</td>
+                        <td>GAP</td>
+                        <td>Funcional</td>
+                        <td>Yoga Suave</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19:15 - 20:05</th>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Spinning</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20:15 - 21:05</th>
+                        <td>Pilates</td>
+                        <td>Yoga</td>
+                        <td>Pilates</td>
+                        <td>Yoga</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección 3: Pautas de reserva y llamada a la acción -->
+        <section id="reserva-plazas">
+            <h2>Reserva y Aforos</h2>
+            <p>Para garantizar una atención cercana y corregir adecuadamente la técnica de cada ejercicio, las clases están limitadas a un máximo de <strong>15 personas</strong> por sesión:</p>
+            <ol>
+                <li>Las plazas se pueden reservar con hasta 48 horas de antelación en la recepción o vía telefónica.</li>
+                <li>Si no puedes acudir, cancela al menos 1 hora antes para liberar el puesto a otro compañero/a.</li>
+                <li>Es indispensable traer toalla de entrenamiento y calzado limpio para uso exclusivo en sala.</li>
+            </ol>
+            <p>
+                <a href="alta-socio.html" class="boton-accion">Hazte Socio para Reservar</a>
+            </p>
+        </section>
+
+        <!-- Bloque tangencial con aside -->
+        <aside id="info-extra">
+            <h3>Clases de prueba gratuitas</h3>
+            <p>
+                ¿Quieres probar una sesión antes de inscribirte? Acércate a la recepción o envíanos un correo a <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a> para reservar tu primera clase sin compromiso.
+            </p>
+        </aside>
+    </main>
+
+    <!-- 3. PIE DE PÁGINA (Layout común) -->
+    <footer id="pie-pagina">
+        <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
+        <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
+    </footer>
+
+</body>
+</html>
