@@ -1,0 +1,150 @@
+/* --- 1. Selectores Generales (Etiquetas) --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #1a365d;
+    margin-top: 0;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+/* Pseudoclase :hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- 2. Layout y Selectores de Identificador (#id) --- */
+#cabecera-principal {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenedor-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#menu-sitio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#menu-sitio a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border: 1px solid #d2d6dc;
+}
+
+#pie-pagina {
+    background-color: #2d3748;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* --- 3. Selectores de Clase (.clase) --- */
+.indice-pagina {
+    background-color: #edf2f7;
+    border-left: 4px solid #2b6cb0;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.boton-accion {
+    display: inline-block;
+    background-color: #e53e3e;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.boton-accion:hover {
+    background-color: #c53030;
+    text-decoration: none;
+}
+
+/* --- 4. Tablas (actividades.html) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+th {
+    background-color: #edf2f7;
+}
+
+/* --- 5. Formularios y Pseudoclases (alta.html) --- */
+fieldset {
+    border: 1px solid #cbd5e0;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: #1a365d;
+}
+
+.fila-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 0.5rem;
+    border: 1px solid #a0aec0;
+}
+
+/* Pseudoclase :required */
+input:required, select:required {
+    border-left: 3px solid #e53e3e;
+}
+
+/* Pseudoclase :disabled */
+input:disabled {
+    background-color: #edf2f7;
+    cursor: not-allowed;
+}
