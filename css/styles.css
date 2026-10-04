@@ -259,3 +259,17 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #e2e8f0;
 }
+
+/* Alineación horizontal de sellos W3C en el footer */
+.sellos-validacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.sellos-validacion img {
+    margin: 0;
+    display: block;
+}
