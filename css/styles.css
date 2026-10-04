@@ -253,3 +253,9 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #e2e8f0;
 }
+
+/* Centrar el sello de validación en el footer */
+#pie-pagina img {
+    margin: 0.8rem auto 0 auto;
+    display: block;
+}

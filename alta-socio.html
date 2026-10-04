@@ -44,8 +44,9 @@
         <!-- El formulario envuelve TODOS los campos y el botón de envío -->
         <form action="#" method="post">
 
-            <!-- Bloque 1: Datos Personales -->
+            <!-- Bloque 1: Datos Personales (ahora con h2) -->
             <section id="sec-personales">
+                <h2>1. Información del Usuario</h2>
                 <fieldset>
                     <legend>Datos personales del socio/a</legend>
 
@@ -71,8 +72,9 @@
                 </fieldset>
             </section>
 
-            <!-- Bloque 2: Selección de cuota y preferencias de gimnasio -->
+            <!-- Bloque 2: Selección de cuota (ahora con h2) -->
             <section id="sec-cuota">
+                <h2>2. Elección de Tarifa</h2>
                 <fieldset>
                     <legend>Modalidad de suscripción</legend>
 
@@ -103,13 +105,14 @@
 
                     <div class="fila-formulario">
                         <label for="comentarios">Objetivos o lesiones previas (opcional):</label>
-                        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Indica si tienes alguna molestia física o tus objetivos principales..."></textarea>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Indica si tienes alguna molestia física o tus objetivos principales..."></textarea>
                     </div>
                 </fieldset>
             </section>
 
-            <!-- Bloque 3: Condiciones y Envío -->
+            <!-- Bloque 3: Términos y Envío (ahora con h2) -->
             <section id="sec-confirmacion">
+                <h2>3. Finalizar Inscripción</h2>
                 <fieldset>
                     <legend>Confirmación legal</legend>
                     <p>
@@ -124,9 +127,9 @@
             </section>
         </form>
 
-        <!-- Bloque tangencial con aside -->
+        <!-- Bloque tangencial (corregido de h3 a h2) -->
         <aside id="info-extra">
-            <h3>Atención presencial</h3>
+            <h2>Atención presencial</h2>
             <p>
                 Si prefieres realizar el alta de forma física o abonar la cuota en efectivo, puedes pasar por la recepción del centro en horario de apertura presentando tu documento de identidad.
             </p>
@@ -135,8 +138,15 @@
 
     <!-- 3. PIE DE PÁGINA (Layout común) -->
     <footer id="pie-pagina">
-        <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
-        <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
+    <p>&copy; 2026 Gimnasio Norte. Proyecto formativo de maquetación web.</p>
+    <p>Contacto: <a href="mailto:info@gimnasionorte.es">info@gimnasionorte.es</a></p>
+    
+    <!-- Distintivo W3C CSS Válido (Versión Azul) -->
+    <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener noreferrer">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" width="88" height="31">
+        </a>
+    </p>
     </footer>
 
 </body>
